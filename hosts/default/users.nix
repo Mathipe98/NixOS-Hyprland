@@ -1,4 +1,4 @@
-{ pkgs, username, ... }:
+{ pkgs, username, lib, ... }:
 
 let
   inherit (import ./variables.nix) gitUsername;
@@ -52,19 +52,10 @@ in
 
   programs = {
     # Zsh configuration
-    #oh-my-posh = {
-    #  enable = true;
-    #  useTheme = "jandedobbeleer";
-    #};
+    # NB: This probably doesn't matter since I copy my own .zshrc
     zsh = {
       enable = true;
       enableCompletion = true;
-      
-      #ohMyZsh = {
-      #  enable = true;
-      #  plugins = ["git"];
-      #  theme = "jandedobbeleer"; #"xiong-chiamiov-plus"; 
-      #};
       
       autosuggestions.enable = true;
       syntaxHighlighting.enable = true;
