@@ -38,6 +38,7 @@ in
 	fd
 	bat
 	eza
+	vivaldi
       ];
     };
     
