@@ -48,15 +48,20 @@ in
   environment.systemPackages = with pkgs; [ fzf ]; 
 
   programs = {
-  # Zsh configuration
-      zsh = {
-    	enable = true;
-	  	enableCompletion = true;
-      ohMyZsh = {
-        enable = true;
-        plugins = ["git"];
-        theme = "xiong-chiamiov-plus"; 
-      	};
+    # Zsh configuration
+    oh-my-posh = {
+      enable = true;
+      enableZshIntegration = true;
+      useTheme = "jandedobbeleer";
+    };
+    zsh = {
+      enable = true;
+      enableCompletion = true;
+      #ohMyZsh = {
+      #  enable = true;
+      #  plugins = ["git"];
+      #  theme = "xiong-chiamiov-plus"; 
+      #	};
       
       autosuggestions.enable = true;
       syntaxHighlighting.enable = true;
