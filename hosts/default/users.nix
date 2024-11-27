@@ -30,10 +30,36 @@ in
 	protonvpn-gui
 	python3Full
 	vscode
+	pnpm
+	nodejs
+	xclip
+	(python311.withPackages (ps: with ps; [ pip ]))
+	fzf
+	fd
+	bat
+	eza
+	(nerdfonts.override {
+	  fonts = [
+	    "0xProto",
+	    "Hack",
+	    "FiraCode",
+    	    "FiraMono",
+ 	    "CascadiaCode",
+            "Cousine",
+	    "DroidSansMono",
+	    "JetBrainsMono",
+	    "SourceCodePro"
+	  ];
+	})
       ];
     };
     
     defaultUserShell = pkgs.bash;
+    file."nvim" = {
+      source = "";
+      target = "";
+      recursive = true;
+    }
   }; 
   
   environment.shells = with pkgs; [ bash ];
