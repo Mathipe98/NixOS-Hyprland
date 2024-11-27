@@ -231,6 +231,7 @@
     grim
     gtk-engine-murrine #for gtk themes
     hyprcursor # requires unstable channel
+    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
     hypridle # requires unstable channel
     imagemagick 
     inxi

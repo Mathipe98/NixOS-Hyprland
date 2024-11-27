@@ -54,9 +54,9 @@ sleep 1
 
 echo "-----"
 
-read -rp "$CAT Enter Your New Hostname: [ default ] " hostName
+read -rp "$CAT Enter Your New Hostname: [ hyprland-desktop ] " hostName
 if [ -z "$hostName" ]; then
-  hostName="default"
+  hostName="hyprland-desktop"
 fi
 
 echo "-----"
@@ -71,9 +71,9 @@ else
 fi
 echo "-----"
 
-read -rp "$CAT Enter your keyboard layout: [ us ] " keyboardLayout
+read -rp "$CAT Enter your keyboard layout: [ no ] " keyboardLayout
 if [ -z "$keyboardLayout" ]; then
-  keyboardLayout="us"
+  keyboardLayout="no"
 fi
 
 sed -i 's/keyboardLayout\s*=\s*"\([^"]*\)"/keyboardLayout = "'"$keyboardLayout"'"/' ./hosts/$hostName/variables.nix
@@ -110,8 +110,8 @@ done
 echo "-----"
 
 echo "$NOTE Setting Required Nix Settings Then Going To Install"
-git config --global user.name "installer"
-git config --global user.email "installer@gmail.com"
+git config --global user.name "Mathipe98"
+git config --global user.email "mathias.pettersen@proton.me"
 git add .
 sed -i 's/host\s*=\s*"\([^"]*\)"/host = "'"$hostName"'"/' ./flake.nix
 
