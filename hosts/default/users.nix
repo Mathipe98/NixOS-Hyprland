@@ -23,6 +23,7 @@ in
     # define user packages here
     packages = with pkgs; [
 	zsh
+
 	oh-my-posh
 	gh
 	teams
@@ -39,6 +40,7 @@ in
 	bat
 	eza
 	vivaldi
+    whatsapp-for-linux
       ];
     };
     
