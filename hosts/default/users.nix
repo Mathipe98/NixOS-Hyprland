@@ -41,9 +41,9 @@ in
       ];
     };
     
-    defaultUserShell = pkgs.bash;
+    defaultUserShell = pkgs.zsh;
   }; 
   
-  environment.shells = with pkgs; [ bash ];
+  environment.shells = with pkgs; [ zsh ];
   environment.systemPackages = with pkgs; [ fzf ]; 
 }
