@@ -200,11 +200,13 @@ if [ -d ~/Hyprland-Dots ]; then
   git stash apply
   chmod +x copy.sh
   ./copy.sh 
+  copy ~/.config/zsh/* ~/ && printf "Succesfully copied ZSH files!"
 else
   if git clone --depth 1 https://github.com/Mathipe98/Hyprland-Dots ~/Hyprland-Dots; then
     cd ~/Hyprland-Dots || exit 1
     chmod +x copy.sh
-    ./copy.sh 
+    ./copy.sh
+    copy ~/.config/zsh/* ~/ && printf "Succesfully copied ZSH files!"
   else
     echo -e "$ERROR Can't download Hyprland-Dots"
   fi
