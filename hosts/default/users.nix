@@ -38,28 +38,10 @@ in
 	fd
 	bat
 	eza
-	(nerdfonts.override {
-	  fonts = [
-	    "0xProto",
-	    "Hack",
-	    "FiraCode",
-    	    "FiraMono",
- 	    "CascadiaCode",
-            "Cousine",
-	    "DroidSansMono",
-	    "JetBrainsMono",
-	    "SourceCodePro"
-	  ];
-	})
       ];
     };
     
     defaultUserShell = pkgs.bash;
-    file."nvim" = {
-      source = "";
-      target = "";
-      recursive = true;
-    }
   }; 
   
   environment.shells = with pkgs; [ bash ];
