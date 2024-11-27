@@ -49,19 +49,19 @@ in
 
   programs = {
     # Zsh configuration
-    oh-my-posh = {
-      enable = true;
-      enableZshIntegration = true;
-      useTheme = "jandedobbeleer";
-    };
+    #oh-my-posh = {
+    #  enable = true;
+    #  useTheme = "jandedobbeleer";
+    #};
     zsh = {
       enable = true;
       enableCompletion = true;
+      
       #ohMyZsh = {
       #  enable = true;
       #  plugins = ["git"];
-      #  theme = "xiong-chiamiov-plus"; 
-      #	};
+      #  theme = "jandedobbeleer"; #"xiong-chiamiov-plus"; 
+      #};
       
       autosuggestions.enable = true;
       syntaxHighlighting.enable = true;
