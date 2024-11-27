@@ -58,7 +58,7 @@
 	    canTouchEfiVariables = true;
   	  };
 
-    loader.timeout = 1;    
+    loader.timeout = 10;    
   			
     # Bootloader GRUB
     #loader.grub = {
@@ -137,6 +137,7 @@
   };
 
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnsupportedSystem = true;
   
   programs = {
 	  hyprland = {
@@ -151,8 +152,11 @@
 	  hyprlock.enable = true;
 	  firefox.enable = true;
 	  git.enable = true;
-    nm-applet.indicator = true;
-    #neovim.enable = true;
+	  nm-applet.indicator = true;
+	  neovim = {
+	    enable = true;
+	    defaultEditor = true;
+ 	  }
 
 	  thunar.enable = true;
 	  thunar.plugins = with pkgs.xfce; [
@@ -231,6 +235,7 @@
     grim
     gtk-engine-murrine #for gtk themes
     hyprcursor # requires unstable channel
+    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
     hypridle # requires unstable channel
     imagemagick 
     inxi

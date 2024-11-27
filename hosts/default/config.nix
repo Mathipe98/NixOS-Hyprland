@@ -156,7 +156,7 @@
 	  neovim = {
 	    enable = true;
 	    defaultEditor = true;
- 	  }
+ 	  };
 
 	  thunar.enable = true;
 	  thunar.plugins = with pkgs.xfce; [

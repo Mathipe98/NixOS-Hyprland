@@ -22,6 +22,22 @@ in
 
     # define user packages here
     packages = with pkgs; [
+	bash
+	oh-my-posh
+	gh
+	teams
+	slack
+	protonvpn-gui
+	python3Full
+	vscode
+	pnpm
+	nodejs
+	xclip
+	(python311.withPackages (ps: with ps; [ pip ]))
+	fzf
+	fd
+	bat
+	eza
       ];
     };
     
@@ -30,17 +46,22 @@ in
   
   environment.shells = with pkgs; [ zsh ];
   environment.systemPackages = with pkgs; [ fzf ]; 
-    
+
   programs = {
-  # Zsh configuration
-	  zsh = {
-    	enable = true;
-	  	enableCompletion = true;
-      ohMyZsh = {
-        enable = true;
-        plugins = ["git"];
-        theme = "xiong-chiamiov-plus"; 
-      	};
+    # Zsh configuration
+    oh-my-posh = {
+      enable = true;
+      enableZshIntegration = true;
+      useTheme = "jandedobbeleer";
+    };
+    zsh = {
+      enable = true;
+      enableCompletion = true;
+      #ohMyZsh = {
+      #  enable = true;
+      #  plugins = ["git"];
+      #  theme = "xiong-chiamiov-plus"; 
+      #	};
       
       autosuggestions.enable = true;
       syntaxHighlighting.enable = true;
