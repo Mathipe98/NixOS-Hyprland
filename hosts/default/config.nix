@@ -15,12 +15,14 @@
   imports = [
     ./hardware.nix
     ./users.nix
+    ./nixld.nix
     ../../modules/amd-drivers.nix
     ../../modules/nvidia-drivers.nix
     ../../modules/nvidia-prime-drivers.nix
     ../../modules/intel-drivers.nix
     ../../modules/vm-guest-services.nix
     ../../modules/local-hardware-clock.nix
+
   ];
 
   # BOOT related stuff
@@ -216,6 +218,7 @@
     xdg-user-dirs
     xdg-utils
     gnumake
+    teams
 
     fastfetch
     (mpv.override {scripts = [mpvScripts.mpris];}) # with tray
