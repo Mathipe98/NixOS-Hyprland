@@ -215,6 +215,7 @@
     wget
     xdg-user-dirs
     xdg-utils
+    gnumake
 
     fastfetch
     (mpv.override {scripts = [mpvScripts.mpris];}) # with tray
