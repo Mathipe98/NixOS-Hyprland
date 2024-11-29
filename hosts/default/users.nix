@@ -24,7 +24,7 @@ in
     packages = with pkgs; [
 	zsh
 
-    rg
+    ripgrep
 	oh-my-posh
 	gh
 	slack
