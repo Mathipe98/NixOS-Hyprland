@@ -219,6 +219,8 @@
     xdg-utils
     gnumake
     teams-for-linux
+    inputs.fix-python.packages.${pkgs.system}.default
+    #fix-python
 
     fastfetch
     (mpv.override {scripts = [mpvScripts.mpris];}) # with tray

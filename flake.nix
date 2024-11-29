@@ -14,6 +14,8 @@
 	    inputs.nixpkgs.follows = "nixpkgs";
 	  };
 
+    fix-python.url = "github:GuillaumeDesforges/fix-python";
+
 	rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
   	};
 
