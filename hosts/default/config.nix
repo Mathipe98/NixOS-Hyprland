@@ -218,7 +218,7 @@
     xdg-user-dirs
     xdg-utils
     gnumake
-    teams
+    teams-for-linux
 
     fastfetch
     (mpv.override {scripts = [mpvScripts.mpris];}) # with tray

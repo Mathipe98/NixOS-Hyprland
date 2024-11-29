@@ -26,7 +26,6 @@ in
 
 	oh-my-posh
 	gh
-	teams
 	slack
 	protonvpn-gui
 	python3Full
