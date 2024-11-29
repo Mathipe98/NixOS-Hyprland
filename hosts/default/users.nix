@@ -28,12 +28,13 @@ in
 	gh
 	slack
 	protonvpn-gui
-	python3Full
+    #python3Full
 	vscode
 	pnpm
 	nodejs
 	xclip
-	(python311.withPackages (ps: with ps; [ pip ]))
+    (python311.withPackages (ps: with ps; [ pip ]))
+    (poetry.override { python3 = python311; })
 	fzf
 	fd
 	bat
