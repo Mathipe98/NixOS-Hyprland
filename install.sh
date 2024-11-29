@@ -208,6 +208,13 @@ else
         cp ~/.config/zsh/* ~/
         cp ~/.config/zsh/.zshrc ~/.zshrc
         printf "Succesfully copied ZSH files!"
+        for FILE in "~/.config/hyprlock*.conf"; do
+            if [ -e "$FILE" ]; then
+                mv "$FILE" "$FOLDER/hyprlock.conf"
+                echo "Renamed '$FILE' to 'hyprlock.conf'"
+                break
+            fi
+        done
     else
         echo -e "$ERROR Can't download Hyprland-Dots"
     fi
