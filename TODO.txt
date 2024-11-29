@@ -1,0 +1,3 @@
+BUG:
+After building in a <=1440p monitor with the install script, the hyprlock file is named "hyprlock-2k.conf" and not "hyprlock.conf".
+This can be solved manually after install by writing "mv ~/.config/hypr/hyperlock-2k.conf ~/.config/hypr/hyperlock.conf" in the terminal.
