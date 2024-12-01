@@ -55,6 +55,8 @@ in
 	eza
 	vivaldi
     whatsapp-for-linux
+    proton-pass
+    protonmail-desktop
       ];
     };
     
