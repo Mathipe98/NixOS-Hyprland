@@ -34,7 +34,20 @@ in
 	pnpm
 	nodejs
 	xclip
-    (python311.withPackages (ps: with ps; [ pip ]))
+    (python311.withPackages (ps: with ps; [
+      pip
+      black
+      mypy
+      pyright
+      numpy
+      requests
+      ipykernel
+      pandas
+      matplotlib
+      jupyter
+      notebook
+      ])
+    )
     (poetry.override { python3 = python311; })
 	fzf
 	fd

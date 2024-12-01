@@ -219,6 +219,7 @@
     xdg-utils
     gnumake
     teams-for-linux
+    go
     inputs.fix-python.packages.${pkgs.system}.default
     #fix-python
 
