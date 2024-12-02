@@ -57,6 +57,7 @@ in
     whatsapp-for-linux
     proton-pass
     protonmail-desktop
+    (azure-cli.withExtensions [] ) #[ azure-cli.extensions.aks-preview ])
       ];
     };
     
