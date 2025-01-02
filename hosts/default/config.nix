@@ -204,7 +204,7 @@
     cpufrequtils
     duf
     eza
-    ffmpeg   
+    ffmpeg
     glib #for gsettings to work
     gsettings-qt
     git
@@ -222,6 +222,9 @@
     go
     inputs.fix-python.packages.${pkgs.system}.default
     #fix-python
+    xorg.libSM
+    xorg.libXext
+    opencv
 
     fastfetch
     (mpv.override {scripts = [mpvScripts.mpris];}) # with tray
