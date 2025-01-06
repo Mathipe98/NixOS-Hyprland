@@ -225,6 +225,7 @@
     xorg.libSM
     xorg.libXext
     opencv
+    libuuid
 
     fastfetch
     (mpv.override {scripts = [mpvScripts.mpris];}) # with tray
@@ -281,6 +282,8 @@
   ]) ++ [
 	  python-packages
   ];
+
+  env = { LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [pkgs.libuuid];  };
 
   # FONTS
   fonts.packages = with pkgs; [
