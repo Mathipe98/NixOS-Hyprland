@@ -277,6 +277,11 @@
     yad
     yt-dlp
 
+    # Dotnet
+    dotnet_9.sdk
+    dotnet_9.runtime
+    dotnet_9.aspnetcore
+
     #waybar  # if wanted experimental next line
     #(pkgs.waybar.overrideAttrs (oldAttrs: { mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];}))
   ]) ++ [
