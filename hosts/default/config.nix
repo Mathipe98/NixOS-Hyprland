@@ -278,9 +278,9 @@
     yt-dlp
 
     # Dotnet
-    dotnetCotePackages.dotnet_9.sdk
-    dotnetCotePackages.dotnet_9.runtime
-    dotnetCotePackages.dotnet_9.aspnetcore
+    dotnetCorePackages.dotnet_9.sdk
+    dotnetCorePackages.dotnet_9.runtime
+    dotnetCorePackages.dotnet_9.aspnetcore
 
     #waybar  # if wanted experimental next line
     #(pkgs.waybar.overrideAttrs (oldAttrs: { mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];}))
