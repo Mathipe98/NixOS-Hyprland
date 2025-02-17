@@ -226,6 +226,7 @@
     xorg.libXext
     opencv
     libuuid
+    vial # QMK Firmware (Keyboard)
 
     fastfetch
     (mpv.override {scripts = [mpvScripts.mpris];}) # with tray
