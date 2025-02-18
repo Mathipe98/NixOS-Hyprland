@@ -226,7 +226,7 @@
     xorg.libXext
     opencv
     libuuid
-    vial # QMK Firmware (Keyboard)
+    # vial # QMK Firmware (Keyboard)
 
     fastfetch
     (mpv.override {scripts = [mpvScripts.mpris];}) # with tray
@@ -351,7 +351,6 @@
       wireplumber.enable = true;
     };
   
-    udev.enable = true;
     envfs.enable = true;
     dbus.enable = true;
   
@@ -401,6 +400,10 @@
     #  configDir = "/home/${username}/.config/syncthing";
     #};
 
+    udev.packages = with pkgs; [
+        vial
+        via
+    ];
   };
   
   systemd.services.flatpak-repo = {
