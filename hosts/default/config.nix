@@ -228,6 +228,7 @@
     libuuid
     vial # QMK Firmware (Keyboard)
     via
+    csharpier
 
     fastfetch
     (mpv.override {scripts = [mpvScripts.mpris];}) # with tray
@@ -280,9 +281,13 @@
     yt-dlp
 
     # Dotnet
-    dotnetCorePackages.dotnet_9.sdk
-    dotnetCorePackages.dotnet_9.runtime
-    dotnetCorePackages.dotnet_9.aspnetcore
+    #dotnetCorePackages.dotnet_9.sdk
+    #dotnetCorePackages.dotnet_9.runtime
+    #dotnetCorePackages.dotnet_9.aspnetcore
+    dotnetCorePackages.dotnet_8.sdk
+    dotnetCorePackages.dotnet_8.runtime
+    dotnetCorePackages.dotnet_8.aspnetcore
+    csharp-ls
 
     #waybar  # if wanted experimental next line
     #(pkgs.waybar.overrideAttrs (oldAttrs: { mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];}))
