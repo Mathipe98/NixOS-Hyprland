@@ -20,45 +20,56 @@ in
         "audio"
       ];
 
-    # define user packages here
-    packages = with pkgs; [
-	zsh
+      # define user packages here
+      packages = with pkgs; [
 
-    ripgrep
-	oh-my-posh
-	gh
-	slack
-	protonvpn-gui
-    #python3Full
-	vscode
-	pnpm
-	nodejs
-	xclip
-    (python311.withPackages (ps: with ps; [
-      pip
-      black
-      mypy
-      pyright
-      numpy
-      requests
-      ipykernel
-      pandas
-      matplotlib
-      jupyter
-      notebook
-      ])
-    )
-    (poetry.override { python3 = python311; })
-	fzf
-	fd
-	bat
-	eza
-	vivaldi
-    whatsapp-for-linux
-    proton-pass
-    protonmail-desktop
-    (azure-cli.withExtensions [] ) #[ azure-cli.extensions.aks-preview ])
+        # Terminal
+	    zsh
+	    oh-my-posh
+	    fzf
+	    fd
+	    bat
+	    eza
+        ripgrep
+
+    
+        # Browser
+	    vivaldi
+        
+        # Proton
+	    protonvpn-gui
+        proton-pass
+        protonmail-desktop
+
+        # Notes
+        #obsidian
+
+        # Microsoft
+        whatsapp-for-linux
+        teams-for-linux
+        azuredatastudio
+
+        # Sound / Music
+        #pulseaudioFull
+        #spotify
+        #jamesdsp
+        #cavalier
+  
+        # Keyboard
+        vial # QMK Firmware (Keyboard)
+        via
+
+        # Dev
+	    vscode
+	    pnpm
+	    nodejs
+	    gh
+
+        # Div
+	    slack
+	    xclip
       ];
+
     };
     
     defaultUserShell = pkgs.zsh;
