@@ -42,7 +42,7 @@ in
         protonmail-desktop
 
         # Notes
-        #obsidian
+        obsidian
 
         # Microsoft
         whatsapp-for-linux
@@ -50,9 +50,9 @@ in
         azuredatastudio
 
         # Sound / Music
-        #pulseaudioFull
-        #spotify
-        #jamesdsp
+        pulseaudioFull
+        spotify
+        jamesdsp
         #cavalier
   
         # Keyboard
